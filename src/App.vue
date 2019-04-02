@@ -11,19 +11,24 @@
       <md-drawer :md-active.sync="showNavigation">
 
         <md-list>
+        <md-list-item>
+          <md-icon>child_care</md-icon>
+          <span class="md-list-item-text"><router-link to="/top">ホーム</router-link></span>
+        </md-list-item>
+
           <md-list-item>
-            <md-icon>move_to_inbox</md-icon>
-            <span class="md-list-item-text">company</span>
+            <md-icon>sentiment_satisfied_alt</md-icon>
+            <span class="md-list-item-text"><router-link to="/company">会社紹介</router-link></span>
           </md-list-item>
 
           <md-list-item>
-            <md-icon>send</md-icon>
-            <span class="md-list-item-text">business</span>
+            <md-icon>face</md-icon>
+            <span class="md-list-item-text"><router-link to="/business">事業紹介</router-link></span>
           </md-list-item>
 
           <md-list-item>
-            <md-icon>delete</md-icon>
-            <span class="md-list-item-text">service</span>
+            <md-icon>insert_emoticon</md-icon>
+            <span class="md-list-item-text"><router-link to="/service">サービス案内</router-link></span>
           </md-list-item>
 
         </md-list>
@@ -48,7 +53,6 @@ export default {
     min-height: 300px;
     overflow: hidden;
     position: relative;
-    border: 1px solid rgba(#000, .12);
   }
 
    // Demo purposes only
@@ -60,7 +64,7 @@ export default {
   .md-content {
     padding: 16px;
   }
-  
+
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
