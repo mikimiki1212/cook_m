@@ -5,9 +5,13 @@
 ## フレームワーク、ライブラリ、インフラ構成
 - フロント側フレームワーク: Vue.js
 - サーバーサイド側フレームワーク: 無し
+- CI&CDツール: 無し
 - UIフレームワーク: vuematerial.io
 - ホスティング&httpサーバー: github pages
-> recipe site for practice
+- タスク&進捗管理: git issues
+- ソースコード管理: git
+- コミュニケーションツール: slack
+
 
 ## Build Setup
 
