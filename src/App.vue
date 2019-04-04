@@ -5,7 +5,7 @@
         <md-button class="md-icon-button" @click="showNavigation = true">
           <md-icon>menu</md-icon>
         </md-button>
-        <span class="md-title">My Title</span>
+        <span class="md-title">Cook M</span>
       </md-toolbar>
 
       <md-drawer :md-active.sync="showNavigation">
@@ -13,22 +13,22 @@
         <md-list>
         <md-list-item>
           <md-icon>child_care</md-icon>
-          <span class="md-list-item-text"><router-link to="/top">ホーム</router-link></span>
+          <span class="md-list-item-text"><router-link to="/" class="hogehoge">ホーム</router-link></span>
         </md-list-item>
 
           <md-list-item>
             <md-icon>sentiment_satisfied_alt</md-icon>
-            <span class="md-list-item-text"><router-link to="/company">会社紹介</router-link></span>
+            <span class="md-list-item-text"><router-link to="/company" class="hogehoge">会社紹介</router-link></span>
           </md-list-item>
 
           <md-list-item>
             <md-icon>face</md-icon>
-            <span class="md-list-item-text"><router-link to="/business">事業紹介</router-link></span>
+            <span class="md-list-item-text"><router-link to="/business" class="hogehoge">事業紹介</router-link></span>
           </md-list-item>
 
           <md-list-item>
             <md-icon>insert_emoticon</md-icon>
-            <span class="md-list-item-text"><router-link to="/service">サービス案内</router-link></span>
+            <span class="md-list-item-text"><router-link to="/service" class="hogehoge">サービス案内</router-link></span>
           </md-list-item>
 
         </md-list>
@@ -50,19 +50,33 @@ export default {
 
 <style lang="scss" scoped>
   .page-container {
-    min-height: 300px;
-    overflow: hidden;
-    position: relative;
   }
 
    // Demo purposes only
   .md-drawer {
-    width: 230px;
-    max-width: calc(100vw - 125px);
+    width: 200px;
+    background-color: black;
   }
 
   .md-content {
     padding: 16px;
+  }
+
+  .md-toolbar {
+    color: black;
+    background-color: black;
+  }
+
+  .md-title {
+    color: white;
+  }
+
+  .md-icon {
+    color: white;
+  }
+
+  .hogehoge {
+    color: white;
   }
 
   #app {
@@ -70,7 +84,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+    color: black;
+    margin-top: 0px;
   }
 </style>
