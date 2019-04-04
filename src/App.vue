@@ -13,22 +13,22 @@
         <md-list>
         <md-list-item>
           <md-icon>child_care</md-icon>
-          <span class="md-list-item-text"><router-link to="/" class="hogehoge">ホーム</router-link></span>
+          <span class="md-list-item-text"><router-link to="/" class="menu-link">ホーム</router-link></span>
         </md-list-item>
 
           <md-list-item>
             <md-icon>sentiment_satisfied_alt</md-icon>
-            <span class="md-list-item-text"><router-link to="/company" class="hogehoge">会社紹介</router-link></span>
+            <span class="md-list-item-text"><router-link to="/company" class="menu-link">会社紹介</router-link></span>
           </md-list-item>
 
           <md-list-item>
             <md-icon>face</md-icon>
-            <span class="md-list-item-text"><router-link to="/business" class="hogehoge">事業紹介</router-link></span>
+            <span class="md-list-item-text"><router-link to="/business" class="menu-link">事業紹介</router-link></span>
           </md-list-item>
 
           <md-list-item>
             <md-icon>insert_emoticon</md-icon>
-            <span class="md-list-item-text"><router-link to="/service" class="hogehoge">サービス案内</router-link></span>
+            <span class="md-list-item-text"><router-link to="/service" class="menu-link">サービス案内</router-link></span>
           </md-list-item>
 
         </md-list>
@@ -49,8 +49,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .page-container {
-  }
 
    // Demo purposes only
   .md-drawer {
@@ -75,7 +73,7 @@ export default {
     color: white;
   }
 
-  .hogehoge {
+  .menu-link {
     color: white;
   }
 
