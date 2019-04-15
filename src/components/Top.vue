@@ -117,7 +117,7 @@ export default {
 /*ボタン『more』の設定*/
 .more {
   color: white;
-  background-color: black;
+  background-color: black !important;
 
 }
 </style>
