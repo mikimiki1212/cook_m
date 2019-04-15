@@ -115,7 +115,7 @@ export default {
 }
 
 /*ボタン『more』の設定*/
-.md-raised {
+.more {
   color: white;
   background-color: black;
 
